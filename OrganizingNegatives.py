@@ -1,34 +1,22 @@
-# sort out the output.txt negatives go 1st, non negatives 2nd
-# new program to sort data read in that file
-# type into terminal: python SearchNegatives.py <1950s_Government.txt >output.txt
-# type into terminal: python OrganizingNegatives.py <1950s_Government.txt >output.txt
-# July, 16 2020 * Sahara Palacios
-###
+#########################################################
+# 
+# OrganizingNegative.py
+# 
+# Read in the lines of a file and then sort it 
+#
+# M. Brinkerhoff * SIP2020, UCSC * 2020 July 17 (F)
+# 
+#########################################################
 
+# Give the path to the file
+# Change the path to whatever is best for your computer
+filename = ("/Users/mykelbrinkerhoff/repo/Data_Sets/output.txt") 
 
-     
+# Open file one line at a time and then sort it
+with open(filename) as file_object:
+  lines = file_object.readlines()
+  lines.sort()
 
-
-import fileinput as fi
-import re
-
-# list1 = ['ingenting']
-#def myKey(x):
-  #patternList = ('ingenting', '[^ingenting')
-
-negative_pattern = re.compile('ingenting')
-non_negative_pattern = re.compile('[^ingenting]')
-for line in fi.input():
-    if negative_pattern.search(line):
-    
-        negative = []
-        negative.append(line)
-        first_negative = [0]
-        print ('updated negative list: ', negative)
-    else:
-        nonnegative = []
-        nonnegative.append(line)
-        last_nonnegative = [-1]
-        print ('updated nonnegative list:', nonnegative)
-    
-        
+# Print out the file that has been sorted.
+for line in lines:
+  print(line)
