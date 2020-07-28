@@ -31,3 +31,23 @@ output = 'output.txt'
 
 with open(output, 'w') as f:
     f.write(contents.rstrip())
+
+
+# age = input("What is your age? ")
+# age = int(age)
+# if age < 16:
+#     print("You are to young to drive in Utah!")
+# elif age >= 70:
+#     print("You should probably not drive anymore.")
+# elif age == 16:
+#     print("You can now drive in Utah!")
+# elif age > 16:
+#     print("You can drive in Utah!")
+# else:
+#     print("You didn't give me an age!")
+
+# bikes = ['trek', 'redline', 'giant']
+# print(bikes)
+
+# for bike in bikes:
+#     print(bike)
