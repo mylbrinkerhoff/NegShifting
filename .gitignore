@@ -133,3 +133,6 @@ dmypy.json
 
 # Ignore datasets
 Data
+
+# Mac files
+.DS_Store
