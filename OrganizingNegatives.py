@@ -38,4 +38,8 @@ for line in lines:
      #  last_nonnegative = [-1]
       # print ('updated nonnegative list:', nonnegative)
     
+<<<<<<< HEAD
         
+=======
+        
+>>>>>>> a2f6dd0d60a3d8375d9a96f678009654f1c85936
